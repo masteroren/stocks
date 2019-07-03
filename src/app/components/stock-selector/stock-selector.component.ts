@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-stock-selector',
+  selector: 'stock-selector',
   templateUrl: './stock-selector.component.html',
   styleUrls: ['./stock-selector.component.scss']
 })
