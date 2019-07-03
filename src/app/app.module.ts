@@ -2,17 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { StockSelectorComponent } from './components/stock-selector/stock-selector.component';
+import { PortfolioComponent } from './main/portfolio/portfolio.component';
+import { StockSelectorComponent } from './main/stock-selector/stock-selector.component';
+import { MatCardModule, MatSelectModule } from '@angular/material';
+import { UpdatedListComponent } from './shared/components/updated-list/updated-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    StockSelectorComponent
+    StockSelectorComponent,
+    UpdatedListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
